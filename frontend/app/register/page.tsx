@@ -1,15 +1,17 @@
-'use client';
-
-import React from 'react';
-import { useRedirectIfAuthenticated } from '@/lib/auth';
-import { RegisterForm } from '@/components/auth/RegisterForm';
+// app/register/page.tsx
+import { Suspense } from 'react';
+import RegisterClient from './RegisterClient';
 
 export default function RegisterPage() {
-  useRedirectIfAuthenticated();
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 flex items-center justify-center p-4">
-      <RegisterForm />
-    </div>
+    <Suspense
+      fallback={
+        <div className="min-h-screen flex items-center justify-center">
+          Loading...
+        </div>
+      }
+    >
+      <RegisterClient />
+    </Suspense>
   );
 }

@@ -639,11 +639,11 @@ filesure-referral-system/
 │   └── package.json
 │
 ├── docs/
-│   ├── screenshots/                      # Application screenshots
-│   ├── architecture-diagram.png          # System architecture
-│   ├── user-registration-flow.png        # Registration flow diagram
-│   ├── purchase-credit-flow.png          # Purchase flow diagram
-│   └── postman-collection.json           # API collection
+│   ├── screenshots/                     # Application screenshots
+│   ├── UML diagram.png                  # System architecture
+│   ├── User Registration Flow.png       # Registration flow diagram
+│   ├── First Purchase & Credit Award Flow.png          # Purchase flow diagram
+│   └── postman-collection.json          # API collection
 │
 ├── .gitignore
 └── README.md
